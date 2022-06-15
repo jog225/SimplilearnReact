@@ -6,6 +6,8 @@ import {ClassComp1} from "./Components/ClassComp";
 import Click from "./Components/Click";
 import Counter from "./Components/Counter";
 import ParentComp from "./Components/ParentComp";
+import Classprops from "./Classprops";
+import Functionprop from "./Functionprop";
 
 function App() {
   return (
@@ -18,6 +20,18 @@ function App() {
       <Click />
       <Counter />
       <ParentComp />
+      <Classprops name="Learner 1" place="PlaceX">
+        <p>
+          Child Component
+        </p>
+      </Classprops>
+      <Classprops name="Learner 2" place="PlaceY">
+        <button>
+          Click
+        </button>
+      </Classprops>
+      <Classprops name="Learner 3" place="PlaceZ" />
+      <Functionprop name="Learner 4" place="PlaceA" /> {" "}
     </div>
   );
 }
